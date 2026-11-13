@@ -44,9 +44,12 @@ Titanic-Survival-Prediction/
 │
 ├── app.py
 ├── titanic.ipynb
-├── titanic_model.pkl
+├── model.pkl
 ├── requirements.txt
 ├── README.md
+│
+├── dataset/
+│   └── titanic.csv
 │
 └── screenshots/
     └── titanic_app.png
@@ -54,7 +57,25 @@ Titanic-Survival-Prediction/
 
 ## 📊 Dataset
 
-The Titanic dataset contains passenger information, including demographic details and travel information, which can be used to predict survival.
+The Titanic dataset contains passenger information from the Titanic disaster. It is used to train the Random Forest Classifier to predict passenger survival.
+
+**Dataset Features:**
+- PassengerId – Unique passenger identification number
+- Survived – Survival status (0 = Not Survived, 1 = Survived)
+- Pclass – Passenger class
+- Name – Passenger name
+- Sex – Gender
+- Age – Passenger age
+- SibSp – Number of siblings/spouses aboard
+- Parch – Number of parents/children aboard
+- Ticket – Ticket number
+- Fare – Ticket fare
+- Cabin – Cabin number
+- Embarked – Port of embarkation
+
+**Target Variable:** `Survived`
+
+**Dataset File:** `dataset/titanic.csv`
 
 ## 🚀 Streamlit Deployment
 
